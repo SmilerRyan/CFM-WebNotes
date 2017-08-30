@@ -13,10 +13,16 @@ $file = "private/" . $_POST['name'];
 if (file_exists($file)) {
 	if( md5($_POST['password']) == file_get_contents($file) ) {$_SESSION['allowed'] = true;$_SESSION['name'] = $_POST['name'];echo "Success!<meta http-equiv='refresh' content='0'>";}else{echo "not correct";session_destroy();}
 } else {
+	
+	if(ctype_alnum($_POST['name'])){
 	file_put_contents($file, md5($_POST['password']));
 	echo "<b>Your account was created succesfully!</b>";
 	$_SESSION['allowed'] = true;
 	$_SESSION['name'] = $_POST['name'];
+	}else{
+		echo "<b>You are not allowed to use speicial characters in your username. Sorry!</b>";
+	}
+
 }
 
 }
