@@ -5,7 +5,8 @@ Index.php (The one-form signin and signup page)<br>
 note.php  (Page for the notes)<br>
 this file (figure it out yourself)<br>
 <br>
-The private folder will be blocked from the public with a HTAccess file (which github is hiding).<br>
+The private folder will be blocked from the public with a HTAccess file<br>
+(which github is hiding, probabally because it runs linux).<br>
 <br>
 Accounts:<br>
 test/123<br>
