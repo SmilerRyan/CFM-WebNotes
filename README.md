@@ -1,9 +1,11 @@
 This package includes:<br>
 <br>
-CPass.php (Changes the password)<br>
+_config.yml (Config for project page @ https://smilerryan.github.io/CFM-WebNotes/)<br>
 Index.php (The one-form signin and signup page)<br>
-note.php  (Page for the notes)<br>
 this file (figure it out yourself)<br>
+CPass.php (Changes the password)<br>
+note.php  (Page for the notes)<br>
+Private (Passwords and Notes)<br>
 <br>
 The private folder will be blocked from the public with a HTAccess file<br>
 (which github is hiding, probabally because it runs linux).<br>
