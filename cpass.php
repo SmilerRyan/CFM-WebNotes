@@ -7,7 +7,7 @@ if (!ISSET($_SESSION['allowed'])) {echo "You are not logged in...";exit();}
 
 if ($_SESSION['allowed'] == true) {?>
 <form action="" method="POST">
-<textarea id="note" name="note"><?php if(file_exists("private/".$_SESSION['name'].".txt")) {echo file_get_contents("private/".$_SESSION['name'].".txt");}?></textarea>
+New password for <?php echo $_SESSION['name']; ?>: <input id="note" name="note"><?php if(file_exists("private/".$_SESSION['name'].".txt")) {echo file_get_contents("private/".$_SESSION['name'].".txt");}?></input>
 <br><input type="submit"></input></form>
 <?php
 } else {
