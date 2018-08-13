@@ -1,6 +1,3 @@
-Live demo: http://ryan.ngrok.io:13269/<br>
-<br>
-<br>
 This package includes:<br>
 <br>
 _config.yml (Config for project page @ https://smilerryan.github.io/CFM-WebNotes/)<br>
